@@ -30,19 +30,15 @@ $ git clone https://github.com/rafa1944/edukey-test edukey_test
 ```sh
 $ composer install
 ```
-3.Generate a key
-```sh
-$ php artisan key:generate
-```
-4.Create the Database file
+3.Create the Database file
 ```sh
 $ touch database/database.sqlite
 ```
-5.Run migrations to create DB & tables
+4.Run migrations to create DB & tables
 ```sh
 $ php artisan migrate
 ```
-6.Activate the server
+5.Activate the server
 ```sh
 $ php -S localhost:3000 -t public
 ```
