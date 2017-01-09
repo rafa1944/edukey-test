@@ -59,6 +59,18 @@ The most important file to check the assessment is:
 ```php
 \public\js\app.js
 ```
+- Where we check that the user is the owner of the task, so he can delete it
+```php
+\App\Policies\TaskPolicy.php
+```
+- Where we loggin the user with Google and add it to our DB
+```php
+\App\Http\Controllers\Auth\LoginController.php
+```
+- Where you can find the Repository pattern for Task model
+```php
+\App\Repositories\TaskRepository.php
+```
 
 ## Best practices
 
