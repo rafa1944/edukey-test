@@ -51,11 +51,11 @@ Now, point your browser to [localhost:3000](http://localhost:3000)
 
 The most important file to check the assessment is:
 
-- Where all the backend things happens
+- Where all the backend happens
 ```php
 \App\Http\Controllers\TaskController.php
 ```
-- Where all the frondend things happens
+- Where all the frontend happens
 ```php
 \public\js\app.js
 ```
