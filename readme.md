@@ -15,7 +15,7 @@ For this assessment, the task is to create an TODO simple app. The actions will 
 7. Git working on command line
 8. Composer working on command line
 
-## Getting Started
+## Getting Started on Mac OS X
 
 The assesment is built on Laravel 5 framework.
 
@@ -34,11 +34,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-4.Run migrations to create DB & tables
+4.Create the Database file
+```sh
+$ touch database/database.sqlite
+```
+5.Run migrations to create DB & tables
 ```sh
 $ php artisan migrate
 ```
-5.Activate the server
+6.Activate the server
 ```sh
 $ php -S localhost:3000 -t public
 ```
