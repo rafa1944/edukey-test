@@ -49,7 +49,7 @@ Now, point your browser to [localhost:3000](http://localhost:3000)
 
 ## Where is the core?
 
-The most important file to check the assessment is:
+The most important files to check the assessment are:
 
 - Where all the backend happens
 ```php
