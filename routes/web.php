@@ -11,6 +11,20 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/tasks');
 });
+
+
+
+//Route::get('/home', 'HomeController@index');
+
+# Routes for TaskController
+Route::get('/tasks', 'TaskController@index');
+Route::post('/task', 'TaskController@store');
+Route::delete('/task/{task}', 'TaskController@destroy');
+
+Route::get('auth/google', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/google-callback', 'Auth\LoginController@handleProviderCallback');
