@@ -24,7 +24,7 @@ To setup the project in your local machine, please follow the next steps:
 1.Clone the repo
 
 ```sh
-$ git clone https://github.com/rafa1944/voiceworks voiceworks_test
+$ git clone https://raw.githubusercontent.com/rafa1944/edukey-test edukey_test
 ```
 2.Download vendor dependencies with composer
 ```sh
@@ -54,6 +54,10 @@ The most important file to check the assessment is:
 - Where all the backend things happens
 ```php
 \App\Http\Controllers\TaskController.php
+```
+- Where all the frondend things happens
+```php
+\public\js\app.js
 ```
 
 ## Best practices
