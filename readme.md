@@ -24,7 +24,7 @@ To setup the project in your local machine, please follow the next steps:
 1.Clone the repo
 
 ```sh
-$ git clone https://raw.githubusercontent.com/rafa1944/edukey-test edukey_test
+$ git clone https://github.com/rafa1944/edukey-test edukey_test
 ```
 2.Download vendor dependencies with composer
 ```sh
