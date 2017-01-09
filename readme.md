@@ -1,40 +1,67 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><a href="https://www.edukey.co.uk/" target="_blank"><img src="https://www.edukey.co.uk/wp-content/themes/edukey-v2/img/logo.png"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# EDUKEY ASSESSMENT
 
-## About Laravel
+For this assessment, the task is to create an TODO simple app. The actions will be handle by AJAX calls.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Requirements
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. PHP needs to be a minimum version of PHP 5.6.4
+2. OpenSSL PHP Extension
+3. PDO PHP Extension
+4. Mbstring PHP Extension
+5. Tokenizer PHP Extension
+6. XML PHP Extension
+7. Git working on command line
+8. Composer working on command line
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## Getting Started
 
-## Learning Laravel
+The assesment is built on Laravel 5 framework.
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+To setup the project in your local machine, please follow the next steps:
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+1.Clone the repo
 
-## Contributing
+```sh
+$ git clone https://github.com/rafa1944/voiceworks voiceworks_test
+```
+2.Download vendor dependencies with composer
+```sh
+$ composer install
+```
+3.Generate a key
+```sh
+$ php artisan key:generate
+```
+4.Run migrations to create DB & tables
+```sh
+$ php artisan migrate
+```
+5.Activate the server
+```sh
+$ php -S localhost:3000 -t public
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Now, point your browser to [localhost:3000](http://localhost:3000)
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-## License
+## Where is the core?
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The most important file to check the assessment is:
+
+- Where all the backend things happens
+```php
+\App\Http\Controllers\TaskController.php
+```
+
+## Best practices
+
+I´ve developed this test using SOLID principles.
+
+I´ve used Dependency Injection & Single Responsability with the Repository Pattern.
+
+## Any problem?
+
+Send me an email anytime.
