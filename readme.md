@@ -21,7 +21,7 @@ The assesment is built on Laravel 5 framework.
 
 To setup the project in your local machine, please follow the next steps:
 
-1.Clone the repo
+1.Clone the repo and change your directory to 'edukey_test'
 
 ```sh
 $ git clone https://github.com/rafa1944/edukey-test edukey_test
